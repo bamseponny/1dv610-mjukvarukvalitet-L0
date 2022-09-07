@@ -29,7 +29,7 @@ function Home() {
           onChange={(event) => setFullName(event.target.value)}
               />
           <br/>
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
       </form>
     </div>
   )

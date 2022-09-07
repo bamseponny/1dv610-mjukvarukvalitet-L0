@@ -7,16 +7,6 @@ import Confetti from "react-confetti";
  */
 function Home() {
 
-  const Splash = (props) =>
-  <div className="splash">
-    <Confetti
-      width={window.innerWidth}
-      height={window.innerHeight}
-      opacity={0.9}
-      gravity={0.07}
-    />
-  </div>;
-
   const fetchedName = localStorage.getItem('name')
   console.log(fetchedName)
 
@@ -24,11 +14,11 @@ function Home() {
     <div className="result">
       <p>Welcome, {fetchedName}</p>
       <Confetti
-      width={window.innerWidth}
-      height={window.innerHeight}
-      opacity={0.9}
-      gravity={0.07}
-    />
+        width={window.innerWidth}
+        height={window.innerHeight}
+        opacity={1}
+        gravity={0.06}
+      />
     </div>
   )
 }
